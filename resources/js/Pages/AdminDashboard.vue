@@ -12,7 +12,7 @@ const loading = ref<boolean>(true);
 const fetchUserCount = async () => {
   try {
     const response = await axios.get<{ count: number }>("/api/user-count");
-    userCount.value = response.data.count; // Update the user count
+    userCount.value = response.data.count; 
   } catch (error) {
     console.error("Error fetching user count:", error);
   }
@@ -31,7 +31,7 @@ const fetchUsers = async () => {
 // Lifecycle hook
 onMounted(async () => {
   loading.value = true;
-  await Promise.all([fetchUserCount(), fetchUsers()]); // Fetch data in parallel
+  await Promise.all([fetchUserCount(), fetchUsers()]); 
   loading.value = false;
 });
 </script>
