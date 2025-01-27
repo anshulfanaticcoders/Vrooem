@@ -591,7 +591,7 @@ const proceedToPayment = () => {
                                                 <img :src="infoIcon" alt="" /></span>
                                         </div>
                                     </div>
-                                    <div v-if="props.auth.user.role === 'customer'" class="column mt-[2rem]">
+                                    <div class="column mt-[2rem]">
                                         <button @click="proceedToPayment"
                                             class="button-primary block text-center p-5 w-full">
                                             Proceed to Pay
