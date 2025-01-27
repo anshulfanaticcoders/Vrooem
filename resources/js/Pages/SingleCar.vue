@@ -30,7 +30,7 @@ import { usePage } from "@inertiajs/vue3";
 
 const { props } = usePage(); // Get the props passed from the controller
 const vehicle = ref(props.vehicle);
-const currencies = ref([]); // To store the currency data
+const currencies = ref([]); 
 
 // Fetch currency data from the JSON file
 const fetchCurrencies = async () => {
