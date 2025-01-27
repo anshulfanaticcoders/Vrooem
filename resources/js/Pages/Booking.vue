@@ -8,7 +8,7 @@ import AuthenticatedHeaderLayout from "@/Layouts/AuthenticatedHeaderLayout.vue";
 import walkIcon from "../../assets/walkingrayIcon.svg";
 import { Inertia } from '@inertiajs/inertia';
 import paypal from '../../assets/paypal.svg';
-import mastercard from '../../assets/mastercard.svg';
+// import mastercard from '../../assets/mastercard.svg';
 // import visa from '../../assets/Visa.svg';
 
 // Add these methods to your script section
@@ -665,10 +665,10 @@ onMounted(() => {
                                 @click="selectPaymentMethod('visa')">
                                 <img :src="visa" alt="Visa" class="h-full w-full" />
                             </div> -->
-                            <div class="payment-method-card flex justify-center items-center w-[8rem] h-[2.5rem] rounded-[99px] cursor-pointer"
+                            <!-- <div class="payment-method-card flex justify-center items-center w-[8rem] h-[2.5rem] rounded-[99px] cursor-pointer"
                                 :class="{ 'bg-[#19304D] border-none': selectedPaymentMethod === 'mastercard', 'border': selectedPaymentMethod !== 'mastercard' }">
                                 <img :src="mastercard" alt="Mastercard" class="h-full w-full" />
-                            </div>
+                            </div> -->
                             <div class="payment-method-card flex justify-center items-center w-[8rem] h-[2.5rem] rounded-[99px] cursor-pointer"
                                 :class="{ 'bg-[#19304D] border-none': selectedPaymentMethod === 'paypal', 'border': selectedPaymentMethod !== 'paypal' }">
                                 <img :src="paypal" alt="PayPal" class="h-full w-full" />
